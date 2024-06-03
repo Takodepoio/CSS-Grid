@@ -1,0 +1,19 @@
+body{
+    padding: 48px;
+    background-color: rgb(201, 246, 249);
+}
+.container{
+    display: grid; /* Esto habilita el comportamiento de grid de este container */
+
+    grid-template-columns: 100px 200px 150px; /* Esto define el ancho de las columnas*/
+    grid-template-rows: 100px 200px 50px; /* Esto define el alto de cada fila */
+
+
+    background-color: pink;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+.item{
+    background-color: blueviolet;
+}
