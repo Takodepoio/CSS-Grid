@@ -5,8 +5,8 @@ body{
 .container{
     display: grid; /* Esto habilita el comportamiento de grid de este container */
 
-    grid-template-columns: 100px 200px 150px; /* Esto define el ancho de las columnas*/
-    grid-template-rows: 100px 200px 50px; /* Esto define el alto de cada fila */
+    grid-template-columns: repeat(6,1fr); /* Esto define el ancho de las columnas*/
+    grid-template-rows:  1fr 2fr; /* Esto define el alto de cada fila */
 
 
     background-color: pink;
