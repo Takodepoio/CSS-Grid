@@ -5,16 +5,37 @@ body{
 .container{
     display: grid; /* Esto habilita el comportamiento de grid de este container */
 
-    grid-template-columns: repeat(3,1fr); /* Esto define el ancho de las columnas*/
-    grid-template-rows:  repeat(3,1fr); /* Esto define el alto de cada fila */
+    grid-template-columns: repeat(3,100px); /* Esto define el ancho de las columnas*/
+    grid-template-rows:  repeat(3,100px); /* Esto define el alto de cada fila */
+    grid-template-areas: 
+    "header header header"
+    "main   main   sidebar"
+    "footer footer footer"
+    ;
 
 
-    background-color: pink;
+    background-color: rgb(62, 255, 200);
     width: 500px;
     height: 500px;
     margin: 0 auto;
 }
-.item{
+.main{
+    background-color: blueviolet;
+    grid-area: main;
+}
+.header{
+    background-color: cadetblue ;
+    grid-area: header;
+}
+.sidebar{
+    background-color: crimson;
+    grid-area: sidebar;
+}
+.footer{
+    background-color: rgb(206, 255, 8);
+    grid-area: footer;
+}
+/* .item{
     background-color: blueviolet;
 }
 .item-1{
@@ -28,4 +49,4 @@ body{
     grid-row: 1/3;
     background-color: aquamarine;
     border-radius: 50%;
-}
+} */
