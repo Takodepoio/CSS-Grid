@@ -7,11 +7,12 @@ body{
 
     grid-template-columns: repeat(3,1fr); /* Esto define el ancho de las columnas*/
     grid-template-rows:  repeat(3,1fr); /* Esto define el alto de cada fila */
-    grid-template-areas: 
-    "header header header"
-    "main   main   sidebar"
-    "footer footer footer"
-    ;
+
+    grid-auto-flow: row;/* Es el valor por default */
+    grid-auto-flow: column; /* Este valor cambia flujo a columnas */
+
+    /* Esto no es de grid */
+    direction: rtl;
 
 
     background-color: rgb(62, 255, 200);
@@ -43,4 +44,11 @@ body{
 }
 .e{
     background-color: darkcyan;
+}
+
+.container div{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
